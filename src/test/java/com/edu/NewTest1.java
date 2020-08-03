@@ -43,7 +43,7 @@ public class NewTest1 {
   @Test
   public void verifytitle() {
 	  
-        //String a = driver.getTitle();
+        String a = driver.getTitle();
         System.out.println(a);
         Assert.assertEquals(a, "Home | Simple PHP Website");
 	    System.out.println("Test Successful."); 
