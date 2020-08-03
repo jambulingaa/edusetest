@@ -27,7 +27,7 @@ public class NewTest1 {
   @Test
   public void addContact() {
 	  
-	 	driver.findElement(By.xpath("//div[@class = 'About us']")).click();
+	 	driver.findElement(By.xpath("//*[@id='About Us']")).click();
 			
 	}
   
