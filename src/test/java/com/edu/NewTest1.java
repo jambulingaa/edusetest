@@ -19,7 +19,13 @@ public class NewTest1 {
   public void beforeMethod() {
 	  
 	    System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-	    driver = new ChromeDriver();
+	    ChromeOptions options = new ChromeOptions();
+	    options.addArguments("--no-sandbox");
+            options.addArguments("--headless"); //should be enabled for Jenkins
+            options.addArguments("--disable-dev-shm-usage"); //should be enabled for Jenkins
+            options.addArguments("--window-size=1920x1080"); //should be enabled for Jenkins
+	    options.addArguments("--disable-gpu"); //should be enabled for Jenkins
+	    driver = new ChromeDriver(options);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.get("http://3.135.210.63:8081/");
   }
