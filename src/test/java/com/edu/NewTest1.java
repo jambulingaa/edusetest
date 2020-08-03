@@ -28,7 +28,7 @@ public class NewTest1 {
 	    options.addArguments("--disable-gpu"); //should be enabled for Jenkins
 	    driver = new ChromeDriver(options);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		driver.get("http://3.135.210.63:8081/");
+		driver.get("http://3.133.112.219:8081/");
 	        System.out.println("Successfully launched the php website in chrome browser");
   }
   
