@@ -29,12 +29,14 @@ public class NewTest1 {
 	    driver = new ChromeDriver(options);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.get("http://3.135.210.63:8081/");
+	        System.out.println("Successfully launched the php website in chrome browser");
   }
   
   @Test
   public void addContact() {
 	  
 	 	driver.findElement(By.xpath("//*[@id='About Us']")).click();
+	        System.out.println("Test Successful for About us");
 			
 	}
   
