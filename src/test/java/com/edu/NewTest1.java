@@ -33,7 +33,7 @@ public class NewTest1 {
   }
   
   @Test
-  public void addContact() {
+  public void verifyAbout() {
 	  
 	 	driver.findElement(By.xpath("//*[@id='About Us']")).click();
 	        System.out.println("Test Successful for About us");
